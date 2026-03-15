@@ -13,6 +13,8 @@ import ThemeToggle from '@/components/ThemeToggle';
 import { Course, Semester, calculateGPA, createCourse, loadSemesters, saveSemesters } from '@/lib/gpa';
 
 export default function Index() {
+  const { signOut, user } = useAuth();
+  const navigate = useNavigate();
   const [courses, setCourses] = useState<Course[]>([createCourse(), createCourse(), createCourse()]);
   const [semesterName, setSemesterName] = useState('Semester 1');
   const [semesters, setSemesters] = useState<Semester[]>(loadSemesters);
