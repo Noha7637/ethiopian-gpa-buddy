@@ -1,5 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
-import { Plus, RotateCcw, Save, Download, GraduationCap } from 'lucide-react';
+import { Plus, RotateCcw, Save, Download, GraduationCap, LogOut } from 'lucide-react';
+import { useAuth } from '@/hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 import CourseRow from '@/components/CourseRow';
 import GPAResult from '@/components/GPAResult';
 import CGPACalculator from '@/components/CGPACalculator';
