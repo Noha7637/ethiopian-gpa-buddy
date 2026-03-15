@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# Ethiopian University GPA Calculator
 
-## Project info
+A modern web application designed to help Ethiopian university students calculate their **Semester GPA and Cumulative GPA (CGPA)** easily using the Ethiopian 4.0 grading system.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This tool allows students to track academic performance, calculate GPA instantly, and manage multiple courses in a clean and intuitive interface.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+* Calculate **Semester GPA**
+* Calculate **Cumulative GPA (CGPA)**
+* Add and remove unlimited courses
+* Automatic GPA calculation
+* Ethiopian 4.0 grading system support
+* Responsive design for mobile and desktop
+* Clean and modern user interface
+* GPA summary with total credits and grade points
 
-**Use Lovable**
+## Ethiopian Grading System
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+| Grade | Grade Point |
+| ----- | ----------- |
+| A     | 4.0         |
+| A-    | 3.7         |
+| B+    | 3.3         |
+| B     | 3.0         |
+| B-    | 2.7         |
+| C+    | 2.3         |
+| C     | 2.0         |
+| C-    | 1.7         |
+| D     | 1.0         |
+| F     | 0.0         |
 
-Changes made via Lovable will be committed automatically to this repo.
+GPA is calculated using the formula:
 
-**Use your preferred IDE**
+GPA = Σ(Grade Point × Credit Hours) / Σ(Credit Hours)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project was built using modern web technologies:
 
-Follow these steps:
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn-ui
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+To run the project locally:
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/ethiopian-gpa-calculator.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navigate to the project folder
+cd ethiopian-gpa-calculator
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will run locally and automatically reload when you make changes.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Goal
 
-**Use GitHub Codespaces**
+This project was created to provide a simple academic tool for students studying in Ethiopian universities to easily track and calculate their GPA without manual calculations.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Future Improvements
 
-## What technologies are used for this project?
+* GPA progress tracking
+* Semester history
+* GPA charts and analytics
+* Export GPA report as PDF
+* Course planner
 
-This project is built with:
+## Author
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Developed by **Your Name**
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Computer Science Student
