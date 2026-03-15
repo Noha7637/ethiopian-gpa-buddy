@@ -80,7 +80,12 @@ export default function Index() {
               <p className="text-xs text-muted-foreground leading-tight">GPA Calculator</p>
             </div>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button onClick={async () => { await signOut(); navigate('/'); }} className="btn-outline text-xs px-3 py-1.5">
+              <LogOut className="h-3.5 w-3.5" /> Sign Out
+            </button>
+          </div>
         </div>
       </header>
 
