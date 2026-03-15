@@ -1,5 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
-import { Plus, RotateCcw, Save, Download, GraduationCap } from 'lucide-react';
+import { Plus, RotateCcw, Save, Download, GraduationCap, LogOut } from 'lucide-react';
+import { useAuth } from '@/hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 import CourseRow from '@/components/CourseRow';
 import GPAResult from '@/components/GPAResult';
 import CGPACalculator from '@/components/CGPACalculator';
@@ -11,6 +13,8 @@ import ThemeToggle from '@/components/ThemeToggle';
 import { Course, Semester, calculateGPA, createCourse, loadSemesters, saveSemesters } from '@/lib/gpa';
 
 export default function Index() {
+  const { signOut, user } = useAuth();
+  const navigate = useNavigate();
   const [courses, setCourses] = useState<Course[]>([createCourse(), createCourse(), createCourse()]);
   const [semesterName, setSemesterName] = useState('Semester 1');
   const [semesters, setSemesters] = useState<Semester[]>(loadSemesters);
@@ -76,7 +80,12 @@ export default function Index() {
               <p className="text-xs text-muted-foreground leading-tight">GPA Calculator</p>
             </div>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button onClick={async () => { await signOut(); navigate('/'); }} className="btn-outline text-xs px-3 py-1.5">
+              <LogOut className="h-3.5 w-3.5" /> Sign Out
+            </button>
+          </div>
         </div>
       </header>
 
