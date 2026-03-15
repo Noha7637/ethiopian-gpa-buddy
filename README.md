@@ -78,6 +78,6 @@ This project was created to provide a simple academic tool for students studying
 
 ## Author
 
-Developed by **Your Name**
+Developed by Noah Nathenael Seman
 
 Computer Science Student
