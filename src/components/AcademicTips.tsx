@@ -6,7 +6,7 @@ const tips = [
   'Visit your professors during office hours for clarification.',
   'Start assignments early to avoid last-minute stress.',
   'Use the university library resources and past exams.',
-  'Balance your course load — don't overload with hard courses.',
+  "Balance your course load \u2014 don\u0027t overload with hard courses.",
   'Review your notes within 24 hours of each lecture.',
   'Focus on understanding concepts, not memorizing.',
 ];
